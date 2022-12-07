@@ -71,10 +71,19 @@ function checkWinner() {
         result.innerHTML = "Draw!";
        }
 }
+
+/**
+ * Gets the current score and increments it by 1
+ */
 function incrementPlayerScore() {
 
+     let oldScore = parseInt(document.getElementById("player-score").innerText);
+     document.getElementById("player-score").innerText = ++oldScore;
 }
 
 function incrementComputerScore() {
+
+    let oldScore = parseInt(document.getElementById("computer-score").innerText);
+     document.getElementById("computer-score").innerText = ++oldScore;
 
 }
