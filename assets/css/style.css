@@ -30,12 +30,14 @@ header {
 }
 
 footer {
-
+    box-sizing: border-box;
+    min-height: 80px;
     text-align: center;
     width: 100%;
     position: absolute;
     padding: 5px;
-
+    left: 0;
+    bottom: 0;
 }
 
 /* Game area section */
@@ -59,3 +61,28 @@ footer {
     cursor: pointer;
 }
 
+/* player section */
+
+.player {
+
+    float: left;
+    width: 45%;
+}
+
+#player-image {
+
+    width: 75%;
+}
+
+/* computer section */
+
+.computer {
+
+    float: right;
+    width: 45%;
+}
+
+#computer-image {
+
+    width: 75%;
+}
