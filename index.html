@@ -23,10 +23,6 @@
     <section class="game-area">
         <div>
             <p>Make a choice:</p>
-        </div>
-        <div id="results">
-        </div>
-        <div class="player">
              
         <button class="btn" id="rock" data-choice="0">
             <i class="fa-solid fa-hand-back-fist"></i>
@@ -36,10 +32,18 @@
         </button>
         <button class="btn" id="scissors" data-choice="2">
             <i class="fa-solid fa-hand-scissors"></i>
-            
+
         </button>
+        </div> 
+        <div id="results"></div>
+
+        <div class="player">
+            <h3 class="scores">Your score: <span id="player-score">0</span></h3>
         </div>
-        <div></div>
+
+        <div class="computer">
+            <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+        </div>
     </section>
     <footer></footer>
 
