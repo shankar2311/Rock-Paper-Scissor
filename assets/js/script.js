@@ -48,22 +48,22 @@ function runGame(playerChoice) {
 function checkWinner(playerChoice, computerChoice) {
 
     if (playerChoice == "0" && computerChoice == "1") {
-        result.innerHTML = "Hey! You Lose!";
+        result.innerHTML = "You Lost!";
         incrementComputerScore();
     } else if (playerChoice == "0" && computerChoice == "2") {
-        result.innerHTML = "Hey! You Win!";
+        result.innerHTML = "You Win!";
         incrementPlayerScore();
     } else if (playerChoice == "1" && computerChoice == "0") {
-        result.innerHTML = "Hey! You Win!";
+        result.innerHTML = "You Win!";
         incrementPlayerScore();
     } else if (playerChoice == "1" && computerChoice == "2") {
-        result.innerHTML = "Hey! You Lose!";
+        result.innerHTML = "You Lost!";
         incrementComputerScore();
     } else if (playerChoice == "2" && computerChoice == "1") {
-        result.innerHTML = "Hey! You Win!";
+        result.innerHTML = "You Win!";
         incrementPlayerScore();
     } else if (playerChoice == "2" && computerChoice == "0") {
-        result.innerHTML = "Hey! You Lose!";
+        result.innerHTML = "You Lost!";
         incrementComputerScore();
     } else {
         result.innerHTML = "Draw!";
