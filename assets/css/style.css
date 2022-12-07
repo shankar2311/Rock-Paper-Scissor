@@ -18,10 +18,10 @@ body {
 
     font-family: 'Roboto', sans-serif;
     background-color: rgb(246, 163, 163);
-    
+    height: 750px;
 }
 
-/* Header and footer */
+/* Header */
 
 header {
 
@@ -29,16 +29,6 @@ header {
     height: 50px;
 }
 
-footer {
-    box-sizing: border-box;
-    min-height: 80px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    padding: 5px;
-    left: 0;
-    bottom: 0;
-}
 
 /* Game area section */
 
@@ -47,7 +37,8 @@ footer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1%;
+    margin-top: 1.5%;
+    
 }
 
 /* Buttons section */
@@ -94,4 +85,38 @@ footer {
 #computer-image {
 
     width: 75%;
+}
+ /*  Footer section */
+
+footer {
+    box-sizing: border-box;
+    min-height: 100px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+}
+
+footer p {
+    
+    height: 20px;
+    padding: 5px;
+    
+    text-transform: uppercase;
+
+}
+
+p {
+    
+    height: 20px;
+    padding: 15px;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+h3 {
+    font-size: 1.5rem;
 }
