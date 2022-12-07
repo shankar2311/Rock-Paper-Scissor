@@ -109,9 +109,13 @@ footer p {
 
     height: 20px;
     padding: 5px;
-
+    
     text-transform: uppercase;
 
+}
+
+i {
+    color: black;
 }
 
 p {
@@ -120,6 +124,7 @@ p {
     padding: 15px;
     font-size: 1rem;
     text-transform: uppercase;
+    color: blue;
 
 }
 
