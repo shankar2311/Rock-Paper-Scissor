@@ -2,18 +2,21 @@
 /**
  * Declare constants for possible choices
  */
-
+ let buttons = document.getElementsByTagName("button");
+ const playerImage = document.getElementById("player-image")
+ const computerImage = document.getElementById("computer-image")
+ let result = document.getElementById("results");
 const choices = ["rock", "paper", "scissors"];
 let playerChoice;
 let computerChoice;
 
 // Get the button elements and add event listeners to them
 document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByTagName("button");
+    
 
     for (let button of buttons) {
         button.addEventListener("click", function(){
-            let playerChoice = this.getAttribute("data-type");
+            let playerChoice = this.getAttribute("data-choice");
             runGame(playerChoice);
         })
     }
@@ -25,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
  */
 
 function runGame(playerChoice){
-    const playerImage = document.getElementById("player-image")
-    const computerImage = document.getElementById("computer-image")
+ 
 
     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice];
@@ -40,19 +42,10 @@ function runGame(playerChoice){
     checkWinner();
 }
 
-/*function checkResult() {
-
-    let message = checkWinner(choices[computerChoice], choices[playerChoice]);
-
-    updateScores(message);
-}*/
-
 /**
  * This function checks who is the winner between player and computer
  */
 function checkWinner() {
-
-    let result = document.getElementById("results");
 
       if (playerChoice == "rock" && computerChoice == "paper") {
         result.innerHTML = "Hey! You Lose!";
