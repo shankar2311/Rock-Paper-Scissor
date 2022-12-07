@@ -21,22 +21,20 @@ body {
     height: 750px;
 }
 
-
-
 /* Header */
 
 header {
+
     background-color: rgb(215, 220, 117);
     padding-top: 10px;
     text-align: center;
     height: 50px;
 }
 
-
-
 /* Game area section */
 
 .game-area {
+
     text-align: center;
     width: 100%;
     margin-left: auto;
@@ -46,6 +44,7 @@ header {
 }
 
 .game-area p {
+
     font-size: 25px;
     height: 30px;
 }
@@ -53,6 +52,7 @@ header {
 /* Buttons section */
 
 .btn {
+
     display: inline-block;
     width: 80px;
     height: 50px;
@@ -71,9 +71,10 @@ header {
 /* Results */
 
 #results {
+
     height: 40px;
-    padding: 40px;
-    font-size: 1.5rem;
+    padding: 30px;
+    font-size: 30px;
     text-transform: uppercase;
 }
 
@@ -90,6 +91,11 @@ header {
     width: 75%;
 }
 
+#player-score {
+
+    color: yellow;
+}
+
 /* computer section */
 
 .computer {
@@ -103,9 +109,15 @@ header {
     width: 75%;
 }
 
+#computer-score {
+
+    color: hwb(156 3% 5% / 0.966);
+}
+
 /*  Footer section */
 
 footer {
+
     background-color: rgb(215, 220, 117);
     box-sizing: border-box;
     min-height: 100px;
@@ -121,7 +133,6 @@ footer p {
 
     height: 20px;
     padding: 5px;
-    
     text-transform: uppercase;
 
 }
@@ -141,5 +152,6 @@ p {
 }
 
 h3 {
+
     font-size: 1.5rem;
 }
