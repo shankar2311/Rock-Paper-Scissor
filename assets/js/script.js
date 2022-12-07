@@ -17,9 +17,15 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 })
 
+/**
+ * The main game "loop", called when the script is first loaded
+ * and after the playerchoice has been processed
+ */
 
 function runGmae(){
-
+ 
+    // creates random choices for computerchoice
+    let computerChoice = Math.floor(Math.random() * 3);
 }
 
 function checkResult() {
