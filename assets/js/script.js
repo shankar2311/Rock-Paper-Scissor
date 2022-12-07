@@ -2,32 +2,34 @@
 /**
  * Declare constants for possible choices
  */
- let buttons = document.getElementsByTagName("button");
- const playerImage = document.getElementById("player-image")
- const computerImage = document.getElementById("computer-image")
- let result = document.getElementById("results");
+ const buttons = document.getElementsByTagName("button");
+ const playerImage = document.getElementById("player-image");
+ const computerImage = document.getElementById("computer-image");
+ const result = document.getElementById("results");
+ const playerScore = document.getElementById("player-score");
+ const computerScore = document.getElementById("computer-score");
 const choices = ["rock", "paper", "scissors"];
 let playerChoice;
 let computerChoice;
 
 // Get the button elements and add event listeners to them
-document.addEventListener("DOMContentLoaded", function(){
+
     
 
     for (let button of buttons) {
         button.addEventListener("click", function(){
             let playerChoice = this.getAttribute("data-choice");
             runGame(playerChoice);
-        })
+        });
     }
-})
+
 
 /**
  * The main game "loop", called when the script is first loaded
  * and after the playerchoice has been processed
  */
 
-function runGame(playerChoice){
+function runGame(playerChoice) {
  
 
     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
@@ -47,22 +49,22 @@ function runGame(playerChoice){
  */
 function checkWinner() {
 
-      if (playerChoice == "rock" && computerChoice == "paper") {
+      if (playerChoice == "0" && computerChoice == "1") {
         result.innerHTML = "Hey! You Lose!";
     }
-      else if (playerChoice == "rock" && computerChoice == "scissors") {
+      else if (playerChoice == "0" && computerChoice == "2") {
       result.innerHTML = "Hey! You Win!";
     }
-       else if (playerChoice == "paper" && computerChoice == "rock") {
+       else if (playerChoice == "1" && computerChoice == "0") {
         result.innerHTML = "Hey! You Win!";
     }
-       else if (playerChoice == "paper" && computerChoice == "scissors") {
+       else if (playerChoice == "1" && computerChoice == "2") {
         result.innerHTML = "Hey! You Lose!";
     }
-       else if (playerChoice == "scissors" && computerChoice == "paper") {
+       else if (playerChoice == "2" && computerChoice == "1") {
         result.innerHTML = "Hey! You Win!";
     }
-       else if (playerChoice == "scissors" && computerChoice == "rock") {
+       else if (playerChoice == "2" && computerChoice == "0") {
         result.innerHTML = "Hey! You Lose!";
     }
        else {
