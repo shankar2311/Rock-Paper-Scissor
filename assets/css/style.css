@@ -61,6 +61,15 @@ footer {
     cursor: pointer;
 }
 
+/* Results */
+
+#results {
+    height: 40px;
+    padding: 40px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
 /* player section */
 
 .player {
