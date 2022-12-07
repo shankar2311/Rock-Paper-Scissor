@@ -164,21 +164,22 @@ h3 {
 
 /* Media queries */
 
-/* for screen sizes from 318px wide and down */
+/* for screen sizes from 452px wide and down */
+@media screen and (max-width: 452px) {
+
+    h2 {
+
+        font-size: 1.30rem;
+    }
+
+}
+
+/* for screen sizes from 338px wide and down */
 @media screen and (max-width: 318px) {
 
     .heading {
+
         font-size: 1.5rem;
     }
 
-    h2 {
-        font-size: 1.25rem;
-    }
-    
 }
-
-
-    
-    
-
-
