@@ -2,26 +2,24 @@
 /**
  * Declare constants for possible choices
  */
- const buttons = document.getElementsByTagName("button");
- const playerImage = document.getElementById("player-image");
- const computerImage = document.getElementById("computer-image");
- const result = document.getElementById("results");
- const playerScore = document.getElementById("player-score");
- const computerScore = document.getElementById("computer-score");
+const buttons = document.getElementsByTagName("button");
+const playerImage = document.getElementById("player-image");
+const computerImage = document.getElementById("computer-image");
+const result = document.getElementById("results");
+const playerScore = document.getElementById("player-score");
+const computerScore = document.getElementById("computer-score");
 const choices = ["rock", "paper", "scissors"];
 let playerChoice;
 let computerChoice;
 
 // Get the button elements and add event listeners to them
 
-    
-
-    for (let button of buttons) {
-        button.addEventListener("click", function(){
-            let playerChoice = this.getAttribute("data-choice");
-            runGame(playerChoice);
-        });
-    }
+for (let button of buttons) {
+    button.addEventListener("click", function () {
+        let playerChoice = this.getAttribute("data-choice");
+        runGame(playerChoice);
+    });
+}
 
 
 /**
@@ -30,11 +28,11 @@ let computerChoice;
  */
 
 function runGame(playerChoice) {
- 
+
 
     playerImage.src = `assets/images/${choices[playerChoice]}.png`;
     playerImage.alt = choices[playerChoice];
- 
+
     // creates random choices for computerchoice
     let computerChoice = Math.floor(Math.random() * 3);
 
@@ -49,27 +47,27 @@ function runGame(playerChoice) {
  */
 function checkWinner() {
 
-      if (playerChoice == "0" && computerChoice == "1") {
+    if (playerChoice == "0" && computerChoice == "1") {
         result.innerHTML = "Hey! You Lose!";
-    }
-      else if (playerChoice == "0" && computerChoice == "2") {
-      result.innerHTML = "Hey! You Win!";
-    }
-       else if (playerChoice == "1" && computerChoice == "0") {
+        incrementComputerScore();
+    } else if (playerChoice == "0" && computerChoice == "2") {
         result.innerHTML = "Hey! You Win!";
-    }
-       else if (playerChoice == "1" && computerChoice == "2") {
-        result.innerHTML = "Hey! You Lose!";
-    }
-       else if (playerChoice == "2" && computerChoice == "1") {
+        incrementPlayerScore();
+    } else if (playerChoice == "1" && computerChoice == "0") {
         result.innerHTML = "Hey! You Win!";
-    }
-       else if (playerChoice == "2" && computerChoice == "0") {
+        incrementPlayerScore();
+    } else if (playerChoice == "1" && computerChoice == "2") {
         result.innerHTML = "Hey! You Lose!";
-    }
-       else {
+        incrementComputerScore();
+    } else if (playerChoice == "2" && computerChoice == "1") {
+        result.innerHTML = "Hey! You Win!";
+        incrementPlayerScore();
+    } else if (playerChoice == "2" && computerChoice == "0") {
+        result.innerHTML = "Hey! You Lose!";
+        incrementComputerScore();
+    } else {
         result.innerHTML = "Draw!";
-       }
+    }
 }
 
 /**
@@ -77,13 +75,13 @@ function checkWinner() {
  */
 function incrementPlayerScore() {
 
-     let oldScore = parseInt(document.getElementById("player-score").innerText);
-     document.getElementById("player-score").innerText = ++oldScore;
+    let oldScore = parseInt(document.getElementById("player-score").innerText);
+    document.getElementById("player-score").innerText = ++oldScore;
 }
 
 function incrementComputerScore() {
 
     let oldScore = parseInt(document.getElementById("computer-score").innerText);
-     document.getElementById("computer-score").innerText = ++oldScore;
+    document.getElementById("computer-score").innerText = ++oldScore;
 
 }
