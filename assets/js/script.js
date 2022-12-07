@@ -3,7 +3,7 @@
  * Declare constants for possible choices
  */
 
-const choices = ["rock", "paper", "scissor"]
+const choices = ["rock", "paper", "scissors"]
 
 // Get the button elements and add event listeners to them
 document.addEventListener("DOMContentLoaded", function(){
@@ -25,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function(){
 function runGame(playerChoice){
     const playerImage = document.getElementById("player-image")
     const computerImage = document.getElementById("computer-image")
+
+    playerImage.src = `assets/images/${choices[playerChoice]}.png`;
+    playerImage.alt = choices[playerChoice];
  
     // creates random choices for computerchoice
     let computerChoice = Math.floor(Math.random() * 3);
