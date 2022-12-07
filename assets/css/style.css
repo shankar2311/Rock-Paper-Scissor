@@ -17,17 +17,21 @@ html {
 body {
 
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(246, 163, 163);
+    background-color: rgb(230, 62, 112);
     height: 750px;
 }
+
+
 
 /* Header */
 
 header {
-
+    background-color: rgb(215, 220, 117);
+    padding-top: 10px;
     text-align: center;
     height: 50px;
 }
+
 
 
 /* Game area section */
@@ -90,6 +94,7 @@ header {
 /*  Footer section */
 
 footer {
+    background-color: rgb(215, 220, 117);
     box-sizing: border-box;
     min-height: 100px;
     text-align: center;
