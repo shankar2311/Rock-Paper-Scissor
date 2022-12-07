@@ -31,9 +31,13 @@ function runGame(playerChoice){
  
     // creates random choices for computerchoice
     let computerChoice = Math.floor(Math.random() * 3);
+
+    computerImage.src = `assets/images/${choices[computerChoice]}.png`;
+    computerImage.alt = choices[computerChoice];
 }
 
 function checkResult() {
+    
 
 }
 
