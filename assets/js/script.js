@@ -34,11 +34,15 @@ function runGame(playerChoice){
 
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
+
+    checkResult();
 }
 
 function checkResult() {
-    
 
+    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+
+    updateScores(result);
 }
 
 function checkWinner() {
