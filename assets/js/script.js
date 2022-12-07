@@ -3,7 +3,9 @@
  * Declare constants for possible choices
  */
 
-const choices = ["rock", "paper", "scissors"]
+const choices = ["rock", "paper", "scissors"];
+let playerChoice;
+let computerChoice;
 
 // Get the button elements and add event listeners to them
 document.addEventListener("DOMContentLoaded", function(){
@@ -35,20 +37,45 @@ function runGame(playerChoice){
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    checkResult();
+    checkWinner();
 }
 
-function checkResult() {
+/*function checkResult() {
 
-    let result = checkWinner(choices[computerChoice], choices[playerChoice]);
+    let message = checkWinner(choices[computerChoice], choices[playerChoice]);
 
-    updateScores(result);
-}
+    updateScores(message);
+}*/
 
+/**
+ * This function checks who is the winner between player and computer
+ */
 function checkWinner() {
 
-}
+    let result = document.getElementById("results");
 
+      if (playerChoice == "rock" && computerChoice == "paper") {
+        result.innerHTML = "Hey! You Lose!";
+    }
+      else if (playerChoice == "rock" && computerChoice == "scissors") {
+      result.innerHTML = "Hey! You Win!";
+    }
+       else if (playerChoice == "paper" && computerChoice == "rock") {
+        result.innerHTML = "Hey! You Win!";
+    }
+       else if (playerChoice == "paper" && computerChoice == "scissors") {
+        result.innerHTML = "Hey! You Lose!";
+    }
+       else if (playerChoice == "scissors" && computerChoice == "paper") {
+        result.innerHTML = "Hey! You Win!";
+    }
+       else if (playerChoice == "scissors" && computerChoice == "rock") {
+        result.innerHTML = "Hey! You Lose!";
+    }
+       else {
+        result.innerHTML = "Draw!";
+       }
+}
 function incrementPlayerScore() {
 
 }
