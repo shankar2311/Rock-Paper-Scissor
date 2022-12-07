@@ -45,6 +45,11 @@ header {
 
 }
 
+.game-area p {
+    font-size: 25px;
+    height: 30px;
+}
+
 /* Buttons section */
 
 .btn {
@@ -53,7 +58,14 @@ header {
     height: 50px;
     font-size: 1.5rem;
     margin: 2px;
+    border-radius: 5px;
     cursor: pointer;
+    background-color: rgb(54, 204, 241);
+}
+
+.btn:hover {
+
+    background-color: white;
 }
 
 /* Results */
