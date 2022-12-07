@@ -39,13 +39,13 @@ function runGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    checkWinner();
+    checkWinner(playerChoice, computerChoice);
 }
 
 /**
  * This function checks who is the winner between player and computer
  */
-function checkWinner() {
+function checkWinner(playerChoice, computerChoice) {
 
     if (playerChoice == "0" && computerChoice == "1") {
         result.innerHTML = "Hey! You Lose!";

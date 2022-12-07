@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* setting defaults to zero */
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,7 +9,7 @@
 
 /* --------- Global style */
 html {
-    
+
     min-height: 100%;
     position: relative;
 }
@@ -38,7 +38,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1.5%;
-    
+
 }
 
 /* Buttons section */
@@ -86,7 +86,8 @@ header {
 
     width: 75%;
 }
- /*  Footer section */
+
+/*  Footer section */
 
 footer {
     box-sizing: border-box;
@@ -100,16 +101,16 @@ footer {
 }
 
 footer p {
-    
+
     height: 20px;
     padding: 5px;
-    
+
     text-transform: uppercase;
 
 }
 
 p {
-    
+
     height: 20px;
     padding: 15px;
     font-size: 1rem;
