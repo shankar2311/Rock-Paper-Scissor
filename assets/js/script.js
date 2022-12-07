@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(){
     for (let button of buttons) {
         button.addEventListener("click", function(){
             let playerChoice = this.getAttribute("data-type");
-            alert(`you clicked ${playerChoice}`);
+            runGame(playerChoice);
         })
     }
 })
@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", function(){
  * and after the playerchoice has been processed
  */
 
-function runGmae(){
+function runGame(playerChoice){
+    const playerImage = document.getElementById("player-image")
+    const computerImage = document.getElementById("computer-image")
  
     // creates random choices for computerchoice
     let computerChoice = Math.floor(Math.random() * 3);
