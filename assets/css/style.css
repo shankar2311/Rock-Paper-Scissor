@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* setting defaults to zero */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* --------- Global style */
+html {
+    
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(246, 163, 163);
+    
+}
+
+/* Header and footer */
+
+header {
+
+    text-align: center;
+    height: 50px;
+}
+
+footer {
+    
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding: 5px;
+
+}
