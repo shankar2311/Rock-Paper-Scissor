@@ -1,6 +1,7 @@
 // Wait for the DOM to finish loading before running the game
 /**
  * Declare constants for possible choices
+ * which are taken from Code Institute rock paper scissors game
  */
 const buttons = document.getElementsByTagName("button");
 const playerImage = document.getElementById("player-image");
@@ -13,6 +14,7 @@ let playerChoice;
 let computerChoice;
 
 // Get the button elements and add event listeners to them
+// This code written based on code institute rps code
 
 for (let button of buttons) {
     button.addEventListener("click", function () {
@@ -25,6 +27,7 @@ for (let button of buttons) {
 /**
  * The main game "loop", called when the script is first loaded
  * and after the playerchoice has been processed
+ * Below code inspired from code institute rps game and love math project
  */
 
 function runGame(playerChoice) {
@@ -44,6 +47,7 @@ function runGame(playerChoice) {
 
 /**
  * This function checks who is the winner between player and computer
+ * Below code inspired from love math project and js essentials
  */
 function checkWinner(playerChoice, computerChoice) {
 
@@ -72,6 +76,7 @@ function checkWinner(playerChoice, computerChoice) {
 
 /**
  * Gets the current score and increments it by 1
+ * Below code is inspired from love math project
  */
 function incrementPlayerScore() {
 
