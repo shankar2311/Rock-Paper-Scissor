@@ -39,3 +39,17 @@ Users of this game will learn the rules of Rock Paper Scissors so they can apply
     - The footer is valuable to the user because it clearly explains how the game is played.
 
      ![footer](assets/images/footer.png)
+
+ - ***Testing***
+
+    - The site works well on different browsers like Chrome, Firefox and Microsoft Edge.
+
+    - Shown good results while testing responsiveness to different screens size.
+ 
+     ![Testing](assets/images/testing.png)
+
+ - ***Validator Testing***
+    - HTML
+        - No errors were found when passing through the official W3C validator.
+    - CSS
+        - No errors were found when passing through the official CSS Jigsaw validator.
