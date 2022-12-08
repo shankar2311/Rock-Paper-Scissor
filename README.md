@@ -6,7 +6,7 @@ A classic two-person game. Players start each round by saying, “rock, paper, s
 
 Users of this game will learn the rules of Rock Paper Scissors so they can apply it to decision making with others in their lives. This site will be targeted towards children and adults alike as a simple app to learn, practice and have fun with.
 
-![responsive] (assets/images/rsponsive.png)
+![responsive] (assets/images/responsive.png)
 
 ## Features
 
@@ -14,6 +14,10 @@ Users of this game will learn the rules of Rock Paper Scissors so they can apply
 
 
 - ***Header***
+    - Featured at the top of the page, the header shows the game name: Rock Paper Scissors in a font that is playful and clearly contrasts with the background.
+    - This header clearly tells the user what game they are playing.
+    
+    ![header](assets/images/header.png)
 
 - ***The Game Options***
 
