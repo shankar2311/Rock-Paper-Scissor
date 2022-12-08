@@ -40,7 +40,7 @@ Users of this game will learn the rules of Rock Paper Scissors so they can apply
 
      ![footer](assets/images/footer.png)
 
- - ***Testing***
+ - ***Testing and Lighthouse report***
 
     - The site works well on different browsers like Chrome, Firefox and Microsoft Edge.
 
@@ -53,3 +53,49 @@ Users of this game will learn the rules of Rock Paper Scissors so they can apply
         - No errors were found when passing through the official W3C validator.
     - CSS
         - No errors were found when passing through the official CSS Jigsaw validator.
+
+ - ***Deployment***
+
+    - The process to deploy the project to Github Pages are as follows:
+
+1. Log in to GitHub.com
+
+2. Select the GitHub repository and navigate to the settings.
+
+3. Find the Pages tab and click on it.
+
+4. From the source drop-down menu, select the "Deploy from a branch".
+
+5. And from the Branch menu, select the "main".
+
+6. Click the "save" button, the page will be automatically refreshed.
+
+7. A live link will be dispalyed on top of the page.
+
+
+## Credits
+
+- ***Content and code***
+
+    - The Basic idea of HTML structure is inspired from Code Institutes Rock Paper Scissors project.
+
+    - The Js code was Influenced and inspired from Code Institutes Rock Paper Scissors project and Js essentials lessions. 
+
+    - Layout structure of the main page was influenced from Rock Paper Scissors project by Code Institute. 
+
+    - README.md file was taken from the Code Institute readme-template.
+
+    - The Fonts were taken from [Google Fonts](https://fonts.google.com/)
+
+
+
+- ***Media***
+
+    - Images are taken from [google](https://www.google.com/)
+
+    - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+
+- ***Acknowledgement***
+
+    - Very Thankfull to Code Institute Slack Community.
