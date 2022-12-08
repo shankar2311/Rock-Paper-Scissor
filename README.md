@@ -26,5 +26,11 @@ Users of this game will learn the rules of Rock Paper Scissors so they can apply
      ![options](assets/images/options.png)
 
 - ***The Game Results***
+     - When the user clicks an option, the image relating to their choice is shown on their side of the game board.
+     - The JavaScript code chooses a random option for the computer player, displays the image relating to the computer's choice, and then determines who the winner is.
+     - The winner is announced to the user under the options button, and the score is updated for either the user or the computer, depending on who won.
+     - The results and score are clear to the player, making the game easy to paly, understand who won, and what the score is.
+
+     ![result](assets/images/result.png)
 
 - ***The Footer***
