@@ -54,6 +54,22 @@ Users of this game will learn the rules of Rock Paper Scissors so they can apply
     - CSS
         - No errors were found when passing through the official CSS Jigsaw validator.
 
+- ***Bugs***
+
+    - The buttons do not have an accessible name.
+    ![Bug 1](assets/images/bug1.png)
+
+    - Background and Foreground colors do not have a sufficient contrast ratio.
+    ![Bug 2](assets/images/bug2.png)
+
+- ***Solved Bugs***
+
+    - The buttons do not have an accessible name solved by adding Aria-label to buttons.
+    
+    - Background and Foreground colors do not have a sufficient contrast ratio solved by changing the color for better visibility.
+
+    ![testing](assets/images/testing.png)
+
  - ***Deployment***
 
     - The process to deploy the project to Github Pages are as follows:
